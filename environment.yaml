@@ -1,0 +1,13 @@
+name: sediment-hysteresis
+channels:
+  - conda-forge
+dependencies:
+  - pip
+  - mamba
+  - python
+  - shiny
+  - numpy
+  - matplotlib
+  - scipy
+  - pip:
+    - shinylive
