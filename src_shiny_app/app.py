@@ -19,14 +19,14 @@ app_ui = ui.page_fluid(
     ui.layout_sidebar(
         ui.panel_sidebar(
             ui.h2("Stream Flow Parameters", style="color:#1f77b4"),
-            ui.input_slider(id="q_loc", label=r"ξ, Location:", min=-1., max=1., value=0.,ticks=True),
-            ui.input_slider(id="q_scale", label=r"ω, Scale:", min=0.5, max=2., value=1.,ticks=True),
-            ui.input_slider(id="q_shape", label=r"α, Shape:", min=-4., max=4., value=0.8,ticks=True),
+            ui.input_slider(id="q_loc", label=r"ξ, Location:", min=-2., max=2., value=0.,ticks=True),
+            ui.input_slider(id="q_scale", label=r"ω, Scale:", min=0.25, max=4., value=1.,ticks=True),
+            ui.input_slider(id="q_shape", label=r"α, Shape:", min=-8., max=8., value=0.8,ticks=True),
             ui.hr(),
             ui.h2("Turbidity Parameters", style="color:#ff7f0e"),
-            ui.input_slider(id="qs_loc", label=r"ξ, Location:", min=-1., max=1., value=-1.,ticks=True),
-            ui.input_slider(id="qs_scale", label=r"ω, Scale:", min=0.5, max=2., value=0.85,ticks=True),
-            ui.input_slider(id="qs_shape", label=r"α, Shape:", min=-4., max=4., value=3.5,ticks=True)
+            ui.input_slider(id="qs_loc", label=r"ξ, Location:", min=-2., max=2., value=-1.,ticks=True),
+            ui.input_slider(id="qs_scale", label=r"ω, Scale:", min=0.25, max=4., value=0.85,ticks=True),
+            ui.input_slider(id="qs_shape", label=r"α, Shape:", min=-8., max=8., value=3.5,ticks=True)
         ),
         ui.panel_main(
             ui.output_plot(id="histogram")
